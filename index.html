@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1 id="day-today">What's Your Focus for Today?</h1>
+      <div class="box input-box" id="input-container">
+        <input
+          type="text"
+          id="to-do-input"
+          placeholder="Type in To-Do Task"
+          onfocus="this.value=''"
+        />
+
+        <button onclick="addToDoList()"><i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+
+    <div class="box" id="to-do-list"></div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
